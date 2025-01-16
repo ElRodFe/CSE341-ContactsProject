@@ -3,28 +3,28 @@
       "firstName": "Elias",
       "lastName": "Rodríguez",
       "email": "notgonnatellyou@whatever.com",
-      "fav-color": "Black",
+      "favColor": "Black",
       "birthday": "October 30"
     },
     {
       "firstName": "Jane",
       "lastName": "Smith",
       "email": "janesmith@example.com",
-      "fav-color":"Green",
+      "favColor":"Green",
       "birthday":"November 2"
     },
     {
       "firstName": "Alice",
       "lastName": "Johnson",
       "email": "alicejohnson@example.com",
-      "fav-color":"Blue",
+      "favColor":"Blue",
       "birthday":"January 15"
     },
     {
       "firstName": "Robert",
       "lastName": "Brown",
       "email": "robertbrown@example.com",
-      "fav-color":"Yellow",
+      "favColor":"Yellow",
       "birthday":"June 20"
     }
 ]

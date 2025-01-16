@@ -1,0 +1,43 @@
+### Get all contacts
+GET http://localhost:5500/contacts HTTP/1.1
+Content-Type: application/json
+
+###
+
+### Get a single contact by ID
+GET http://localhost:5500/contacts/678901c5d06857de43547483 HTTP/1.1
+Content-Type: application/json
+
+###
+
+### Create a new contact
+POST http://localhost:5500/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@example.com",
+    "favColor": "blue",
+    "birthday": "January 1"
+}
+
+###
+
+### Update an existing contact
+PUT http://localhost:5500/contacts/678901c5d06857de43547484 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "janesmith@example.com",
+    "favColor": "green",
+    "birthday": "June 15"
+}
+
+###
+
+### Delete a contact
+DELETE http://localhost:5500/contacts/67890ba9c42cdfbc29a55cba HTTP/1.1
+Content-Type: application/json
