@@ -1,62 +1,30 @@
 [
     {
-      "firstName": "John",
-      "lastName": "Doe",
-      "age": 29,
-      "email": "johndoe@example.com"
+      "firstName": "Elias",
+      "lastName": "Rodríguez",
+      "email": "notgonnatellyou@whatever.com",
+      "fav-color": "Black",
+      "birthday": "October 30"
     },
     {
       "firstName": "Jane",
       "lastName": "Smith",
-      "age": 34,
-      "email": "janesmith@example.com"
+      "email": "janesmith@example.com",
+      "fav-color":"Green",
+      "birthday":"November 2"
     },
     {
       "firstName": "Alice",
       "lastName": "Johnson",
-      "age": 25,
-      "email": "alicejohnson@example.com"
+      "email": "alicejohnson@example.com",
+      "fav-color":"Blue",
+      "birthday":"January 15"
     },
     {
       "firstName": "Robert",
       "lastName": "Brown",
-      "age": 42,
-      "email": "robertbrown@example.com"
-    },
-    {
-      "firstName": "Emily",
-      "lastName": "Davis",
-      "age": 30,
-      "email": "emilydavis@example.com"
-    },
-    {
-      "firstName": "Michael",
-      "lastName": "Wilson",
-      "age": 37,
-      "email": "michaelwilson@example.com"
-    },
-    {
-      "firstName": "Olivia",
-      "lastName": "Taylor",
-      "age": 28,
-      "email": "oliviataylor@example.com"
-    },
-    {
-      "firstName": "James",
-      "lastName": "Anderson",
-      "age": 33,
-      "email": "jamesanderson@example.com"
-    },
-    {
-      "firstName": "Sophia",
-      "lastName": "Moore",
-      "age": 26,
-      "email": "sophiamoore@example.com"
-    },
-    {
-      "firstName": "William",
-      "lastName": "Harris",
-      "age": 45,
-      "email": "williamharris@example.com"
+      "email": "robertbrown@example.com",
+      "fav-color":"Yellow",
+      "birthday":"June 20"
     }
 ]

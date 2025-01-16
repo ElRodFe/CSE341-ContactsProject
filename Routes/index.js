@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const contactsController = require("../Controllers/contacts");
+const contactsRoute = require("./contacts")
 
     // GET requests
 router.get("/", (req, res) => {
     res.send("Hello World!")
 });
-router.get("/contacts", contactsController.getAll); //Getting all contacts from database
-router.get("/contacts/:id", contactsController.getById); //Getting ons eingle contact from database
+router.use("/contacts", contactsRoute);
 
 module.exports = router;
