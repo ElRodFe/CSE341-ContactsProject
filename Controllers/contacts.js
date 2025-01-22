@@ -3,21 +3,26 @@ const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res) => {
     //#swagger.tags=["Contacts"]
-    const result = await mongodb.getDatabase().db().collection("Contacts").find();
-    result.toArray().then((contacts) => {
-        res.setHeader("Content-Type", "application/json");
-        res.status(200).json(contacts);
-    });
+    try {
+    const result = await mongodb.getDatabase().db().collection("Contacts").find()
+    .toArray();
+    res.setHeader("Content-Type", "application/json");
+    res.status(200).json(result);
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
 }
 
 const getById = async (req, res) => {
     //#swagger.tags=["Contacts"]
+    try {
     const contactId = new ObjectId(req.params.id);
-    const result = await mongodb.getDatabase().db().collection("Contacts").find({ _id: contactId});
-    result.toArray().then((contacts) => {
-        res.setHeader("Content-Type", "application/json");
-        res.status(200).json(contacts[0]);
-    });
+    const result = await mongodb.getDatabase().db().collection("Contacts").find({ _id: contactId}).toArray();
+    res.setHeader("Content-Type", "application/json");
+    res.status(200).json(result[0]);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
 };
 
 const createContact = async (req, res) => {

@@ -5,10 +5,10 @@
     "description": "CSE341 - W01-W02 Project - BYU Idaho - Elias Rodríguez",
     "version": "1.0.0"
   },
-  "host": "cse341-contactsproject-l6r0.onrender.com",
+  "host": "localhost:5500",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
